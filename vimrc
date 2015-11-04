@@ -30,6 +30,12 @@ Plugin 'VundleVim/Vundle.vim'
 
 "My Plugins
 Plugin 'scrooloose/nerdtree'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'mattly/iterm-colors-pencil'
+Plugin 'mattn/emmet-vim'
+Plugin 'gregsexton/MatchTag'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
