@@ -1,5 +1,7 @@
 set number
 syntax on
+set tabstop=2
+set shiftwidth=2
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -38,6 +40,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'gregsexton/MatchTag'
 Plugin 'eagletmt/neco-ghc'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
 let g:ycm_semantic_triggers = {'haskell' : ['.']}
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,3 +56,19 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+setlocal omnifunc=necoghc#omnifunc
+
+" Sysntatic Settings 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Own shortcuts
+:map :tree :NERDTree
