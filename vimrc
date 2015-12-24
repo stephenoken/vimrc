@@ -41,6 +41,7 @@ Plugin 'gregsexton/MatchTag'
 Plugin 'eagletmt/neco-ghc'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
+Plugin 'othree/html5.vim'
 let g:ycm_semantic_triggers = {'haskell' : ['.']}
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
