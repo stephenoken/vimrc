@@ -42,7 +42,9 @@ Plugin 'eagletmt/neco-ghc'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'othree/html5.vim'
+Plugin 'rust-lang/rust.vim'
 let g:ycm_semantic_triggers = {'haskell' : ['.']}
+let g:ycm_rust_src_path = '/Users/stephenokennedy/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
