@@ -46,12 +46,24 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'eagletmt/neco-ghc'
 Plugin 'unterzicht/vim-virtualenv'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'lokaltog/vim-powerline'
+Plugin 'ryanoasis/nerd-fonts'
+Plugin 'shougo/denite.nvim'
+Plugin 'itchyny/lightline.vim'
+Plugin 'terryma/vim-multiple-cursors'
 
 
+" All of your Plugins must be added before the following line
 let g:ycm_semantic_triggers = {'haskell' : ['.']}
 let g:ycm_rust_src_path = '/Users/stephenokennedy/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src'
 let g:ycm_python_binary_path = 'python'
-" All of your Plugins must be added before the following line
+
+" Vim Dev Icons
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
+set encoding=utf8
+let g:airline_powerline_fonts=1
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
