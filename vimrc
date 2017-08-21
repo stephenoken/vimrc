@@ -1,5 +1,6 @@
 set number
 syntax on
+" colorscheme newproggie
 set tabstop=2
 set shiftwidth=2
 set nocompatible              " be iMproved, required
@@ -38,13 +39,18 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'mattly/iterm-colors-pencil'
 Plugin 'mattn/emmet-vim'
 Plugin 'gregsexton/MatchTag'
-Plugin 'eagletmt/neco-ghc'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'othree/html5.vim'
 Plugin 'rust-lang/rust.vim'
+Plugin 'eagletmt/neco-ghc'
+Plugin 'unterzicht/vim-virtualenv'
+Plugin 'bling/vim-airline'
+
+
 let g:ycm_semantic_triggers = {'haskell' : ['.']}
 let g:ycm_rust_src_path = '/Users/stephenokennedy/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src'
+let g:ycm_python_binary_path = 'python'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -74,4 +80,12 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " Own shortcuts
-:map :tree :NERDTree
+map :tree :NERDTree
+map <F8> :NERDTreeToggle<CR>
+" Split management
+map <C-J> <C-W><C-J>
+map <C-K> <C-W><C-K>
+map <C-L> <C-W><C-L>
+map <C-H> <C-W><C-H>
+set splitbelow
+set splitright
