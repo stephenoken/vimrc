@@ -46,11 +46,12 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'eagletmt/neco-ghc'
 Plugin 'unterzicht/vim-virtualenv'
 Plugin 'bling/vim-airline'
-
+Plugin 'tpope/vim-fugitive'
 
 let g:ycm_semantic_triggers = {'haskell' : ['.']}
 let g:ycm_rust_src_path = '/Users/stephenokennedy/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src'
 let g:ycm_python_binary_path = 'python'
+let g:airline_powerline_fonts = 1
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
