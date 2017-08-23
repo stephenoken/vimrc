@@ -1,9 +1,9 @@
 set number
 syntax on
-" colorscheme newproggie
 set tabstop=2
 set shiftwidth=2
 set nocompatible              " be iMproved, required
+set shell=zsh\ -i
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -52,7 +52,11 @@ Plugin 'ryanoasis/nerd-fonts'
 Plugin 'shougo/denite.nvim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-fugitive'
 
+"Theme
+colorscheme newproggie
+let g:airline_powerline_fonts = 1
 
 " All of your Plugins must be added before the following line
 let g:ycm_semantic_triggers = {'haskell' : ['.']}
