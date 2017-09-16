@@ -3,7 +3,7 @@ syntax on
 set tabstop=2
 set shiftwidth=2
 set nocompatible              " be iMproved, required
-set shell=zsh\ -i
+set clipboard=unnamed
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
