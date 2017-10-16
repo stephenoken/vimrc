@@ -47,6 +47,7 @@ Plugin 'eagletmt/neco-ghc'
 Plugin 'unterzicht/vim-virtualenv'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
+Plugin 'kien/ctrlp.vim'
 
 "Theme
 colorscheme newproggie
@@ -93,3 +94,7 @@ map <C-L> <C-W><C-L>
 map <C-H> <C-W><C-H>
 set splitbelow
 set splitright
+" CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
