@@ -54,6 +54,7 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
+Plugin 'racer-rust/vim-racer'
 
 "Theme
 colorscheme newproggie
@@ -90,15 +91,18 @@ setlocal omnifunc=necoghc#omnifunc
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+set hidden
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
+let g:racer_cmd = "~/.cargo/bin/racer"
+let g:racer_experimental_completer = 1
 " Own shortcuts
 map :tree :NERDTree
 map <F8> :NERDTreeToggle<CR>
+map <C-G> :YcmCompleter GoTo<CR>
 " Split management
 map <C-J> <C-W><C-J>
 map <C-K> <C-W><C-K>
