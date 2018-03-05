@@ -49,6 +49,7 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'racer-rust/vim-racer'
+Plugin 'integralist/vim-mypy'
 
 "Theme
 colorscheme newproggie
