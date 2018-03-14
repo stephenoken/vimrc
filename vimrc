@@ -86,6 +86,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers = ['pycodestyle', 'mypy']
+let g:syntastic_python_mypy_args = "--check-untyped-defs"
+let g:syntastic_python_pycodestyle_args = "--ignore=E305,E302"
 let g:racer_cmd = "~/.cargo/bin/racer"
 let g:racer_experimental_completer = 1
 " Own shortcuts
@@ -103,3 +106,5 @@ set splitright
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
+
+set tags=./tags;$HOME
