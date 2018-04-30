@@ -50,9 +50,12 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'racer-rust/vim-racer'
 Plugin 'integralist/vim-mypy'
+Plugin 'johngrib/vim-game-code-break'
+Plugin 'parsonsmatt/intero-neovim'
+Plugin 'tpope/vim-surround'
 
 "Theme
-colorscheme newproggie
+colorscheme subtle_light
 let g:airline_powerline_fonts = 1
 
 let g:ycm_semantic_triggers = {'haskell' : ['.']}
@@ -87,8 +90,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['pycodestyle', 'mypy']
-let g:syntastic_python_mypy_args = "--check-untyped-defs"
-let g:syntastic_python_pycodestyle_args = "--ignore=E305,E302"
+let g:syntastic_python_mypy_args = "--check-untyped-defs --ignore-missing-imports"
+let g:syntastic_python_pycodestyle_args = "--ignore=E305,E302,E501,W291,E266,E303,W293,E261"
 let g:racer_cmd = "~/.cargo/bin/racer"
 let g:racer_experimental_completer = 1
 " Own shortcuts
