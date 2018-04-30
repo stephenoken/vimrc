@@ -53,6 +53,7 @@ Plugin 'integralist/vim-mypy'
 Plugin 'johngrib/vim-game-code-break'
 Plugin 'parsonsmatt/intero-neovim'
 Plugin 'tpope/vim-surround'
+Plugin 'yggdroot/indentline'
 
 "Theme
 colorscheme subtle_light
