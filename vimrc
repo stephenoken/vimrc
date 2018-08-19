@@ -60,9 +60,12 @@ Plugin 'johngrib/vim-game-code-break'
 Plugin 'parsonsmatt/intero-neovim'
 Plugin 'tpope/vim-surround'
 Plugin 'yggdroot/indentline'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'shougo/neosnippet.vim'
+Plugin 'Shougo/neosnippet-snippets'
 
 "Theme
-colorscheme subtle_light
+" colorscheme subtle_light
 let g:airline_powerline_fonts = 1
 
 " All of your Plugins must be added before the following line
@@ -108,6 +111,11 @@ let g:syntastic_python_pycodestyle_args = "--ignore=E305,E302,E501,W291,E266,E30
 let g:racer_cmd = "~/.cargo/bin/racer"
 let g:racer_experimental_completer = 1
 " Own shortcuts
+" Plugin Shortcuts 
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
 map :tree :NERDTree
 map <F8> :NERDTreeToggle<CR>
 map <C-G> :YcmCompleter GoTo<CR>
