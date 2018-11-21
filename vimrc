@@ -39,7 +39,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'mattly/iterm-colors-pencil'
 Plugin 'mattn/emmet-vim'
 Plugin 'gregsexton/MatchTag'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'othree/html5.vim'
 Plugin 'rust-lang/rust.vim'
@@ -61,17 +61,25 @@ Plugin 'parsonsmatt/intero-neovim'
 Plugin 'tpope/vim-surround'
 Plugin 'yggdroot/indentline'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'shougo/deoplete.nvim'
+Plugin 'zchee/deoplete-jedi'
+Plugin 'carlitux/deoplete-ternjs'
+Plugin 'zchee/deoplete-zsh'
+Plugin 'deathlyfrantic/deoplete-spell'
 Plugin 'shougo/neosnippet.vim'
-Plugin 'Shougo/neosnippet-snippets'
+Plugin 'shougo/neosnippet-snippets'
 
 "Theme
 " colorscheme subtle_light
 let g:airline_powerline_fonts = 1
 
 " All of your Plugins must be added before the following line
-let g:ycm_semantic_triggers = {'haskell' : ['.']}
-let g:ycm_rust_src_path = '/Users/stephenokennedy/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src'
-let g:ycm_python_binary_path = 'python'
+" let g:ycm_semantic_triggers = {'haskell' : ['.']}
+" let g:ycm_rust_src_path = '/Users/stephenokennedy/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src'
+" let g:ycm_python_binary_path = 'python'
+
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
 
 " Vim Dev Icons
 set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
